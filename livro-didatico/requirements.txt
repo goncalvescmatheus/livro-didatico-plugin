@@ -1,0 +1,15 @@
+# Núcleo do livro: cálculo, dados e figuras. Todos de código aberto.
+# Acrescente abaixo os pacotes específicos do assunto, preferindo os abertos.
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+pyarrow>=14
+requests>=2.31
+statsmodels>=0.14
+
+# Específicos do assunto (exemplos; descomente ou troque):
+# scikit-learn>=1.4      # aprendizado de máquina
+# highspy>=1.7           # solver de otimização linear e inteira (HiGHS)
+# linopy>=0.3            # modelagem de otimização
+# networkx>=3.2          # grafos

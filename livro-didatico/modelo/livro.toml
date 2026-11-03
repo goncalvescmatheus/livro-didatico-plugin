@@ -1,0 +1,27 @@
+# Configuração do livro. Lida pelas ferramentas (gerar_livro.py, verificar_livro.py, estilo das figuras).
+titulo = "{{TITULO}}"
+subtitulo = "{{SUBTITULO}}"
+autor = "{{AUTOR}}"
+data = "{{DATA}}"
+idioma = "{{IDIOMA}}"
+saida = "livro"            # nome dos arquivos em saida/ (livro.pdf, livro.docx)
+
+[numeros]                  # separadores no texto, nas tabelas e nos eixos das figuras
+decimal = ","
+milhar = "."
+
+[estrutura]
+pre_textuais = ["0p-prefacio.md", "0s-siglas.md"]
+capitulos = []             # novo_capitulo.py acrescenta "capNN"
+apendices = ["A", "B", "C", "D", "E", "F", "G", "H"]   # G é montado das soluções e respostas de cada capítulo
+
+[verificacao]
+caixa_codigo = "Lendo o código"
+caixas_formula = ["Lendo a fórmula", "Lendo a notação"]
+linguagens_sem_caixa = ["text"]   # blocos de saída de programa
+max_siglas_paragrafo = 3
+min_usos_sigla = 3         # sigla usada menos vezes que isto: escreva por extenso
+max_celula = 120           # caracteres; acima disso a célula provavelmente é um parágrafo
+hbox_tolerancia_pt = 20
+siglas_ignoradas = []      # unidades e nomes próprios do assunto, ex.: ["ONU", "IPCA"]
+vazamentos_extra = []      # expressões regulares adicionais de vazamento de processo

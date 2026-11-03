@@ -1,0 +1,52 @@
+% Fontes (por nome de arquivo, para funcionar no Tectonic sem fontes do sistema)
+\setmainfont{LibertinusSerif}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic]
+\setsansfont{LibertinusSans}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic]
+\setmathfont{LibertinusMath-Regular.otf}
+\setmonofont{DejaVuSansMono}[Extension=.ttf, BoldFont=*-Bold, Scale=0.86]
+\usepackage{newunicodechar}
+\newunicodechar{☐}{\ensuremath{\square}}
+\newfontfamily\simbolos{DejaVuSans}[Extension=.ttf]
+\newunicodechar{✓}{{\simbolos ✓}}
+% Página e títulos
+\usepackage[a4paper, inner=2.6cm, outer=2.4cm, top=2.6cm, bottom=2.8cm]{geometry}
+\usepackage{xcolor}
+\definecolor{azul}{HTML}{1F5F99}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\sffamily\bfseries\color{azul}\raggedright}{}{0pt}{\huge}
+\titlespacing*{\chapter}{0pt}{-10pt}{28pt}
+\titleformat{\section}{\normalfont\sffamily\bfseries\Large\color{azul}}{}{0pt}{}
+\titleformat{\subsection}{\normalfont\sffamily\bfseries\large}{}{0pt}{}
+\titleformat{\subsubsection}{\normalfont\sffamily\bfseries\normalsize}{}{0pt}{}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[LE]{\small\sffamily\leftmark}\fancyhead[RO]{\small\sffamily\rightmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+% Legendas: o número já vem no texto da legenda ("Figura 1.2 — ...")
+\usepackage{caption}
+\captionsetup{labelformat=empty, font=small, labelfont=bf, justification=justified, singlelinecheck=false}
+\captionsetup[table]{labelformat=empty}
+% Figuras fixas no ponto do texto (como no Word): nenhuma figura sai do lugar nem se perde entre páginas
+\usepackage{float}
+\floatplacement{figure}{H}
+% Caixas (citações em markdown) com filete lateral, que quebram entre páginas
+\usepackage{framed}
+\renewenvironment{quote}{\def\FrameCommand{{\color{azul!70}\vrule width 2.2pt}\hspace{8pt}}\MakeFramed{\advance\hsize-\width\FrameRestore}\small}{\endMakeFramed}
+% Código: quebra de linha automática
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\},fontsize=\small}
+% Tabelas
+\renewcommand{\arraystretch}{1.15}
+\setlength{\emergencystretch}{3em}
+\usepackage{microtype}
+\raggedbottom
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small}
+\usepackage{titling}
+\pretitle{\begin{center}\vspace*{5cm}\sffamily\bfseries\color{azul}\fontsize{26}{32}\selectfont}
+\posttitle{\par\end{center}\vspace{0.6cm}}
+\predate{\begin{center}\vspace{6cm}\large}
+\postdate{\par\end{center}}
+\renewcommand{\maketitlehookd}{}
