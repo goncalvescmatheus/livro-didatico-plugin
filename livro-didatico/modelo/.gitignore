@@ -1,0 +1,7 @@
+build/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Dados brutos grandes podem ficar fora do versionamento; os scripts de download os recriam.
+# dados/brutos/

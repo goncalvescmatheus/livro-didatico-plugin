@@ -1,0 +1,15 @@
+{
+  "name": "instrucoes-livro",
+  "description": "Marketplace local com o plugin livro-didatico.",
+  "owner": {
+    "name": "Matheus Gonçalves"
+  },
+  "plugins": [
+    {
+      "name": "livro-didatico",
+      "description": "Livros-texto técnicos e didáticos sobre qualquer assunto, com números reproduzíveis e PDF/Word a partir de Markdown.",
+      "source": "./livro-didatico",
+      "category": "productivity"
+    }
+  ]
+}

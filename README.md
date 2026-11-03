@@ -66,11 +66,11 @@ Todos são gratuitos e de código aberto. Não é preciso instalá-los antes: o 
 No Claude Code:
 
 ```text
-/plugin marketplace add <usuario>/<repositorio>
+/plugin marketplace add goncalvescmatheus/livro-didatico-plugin
 /plugin install livro-didatico@instrucoes-livro
 ```
 
-Para usar a partir de uma cópia local do repositório, troque `<usuario>/<repositorio>` pelo caminho da pasta.
+Para usar a partir de uma cópia local do repositório, troque `goncalvescmatheus/livro-didatico-plugin` pelo caminho da pasta.
 
 ---
 

@@ -1,0 +1,9 @@
+{
+  "name": "livro-didatico",
+  "version": "1.0.0",
+  "description": "Escreve livros-texto técnicos e didáticos sobre qualquer assunto, construídos com o leitor: capítulos com intuição, fórmula comentada, exemplo resolvido passo a passo, estresse, casos históricos, perguntas com gabarito e exercícios em três níveis; números reproduzíveis por código; PDF via LaTeX e Word a partir de uma fonte única em Markdown.",
+  "author": {
+    "name": "Matheus Gonçalves"
+  },
+  "keywords": ["livro", "textbook", "didática", "pandoc", "latex", "reprodutibilidade"]
+}
